@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Transportes Aldunate | Camion tolva</title>
+  <meta name="description" content="Transporte de tierra, arena y materiales. Cotiza por WhatsApp." />
+  <style>
+    :root { --azul:#3E5A73; --azul2:#2C4458; --plata:#9AA3AD; --fondo:#F4F6F8; --wsp:#25D366; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family: Arial, Helvetica, sans-serif; color:#1A2332; background:#fff; line-height:1.5; }
+    header { display:flex; align-items:center; justify-content:space-between; padding:16px 7%; border-bottom:1px solid #e6eaee; position:sticky; top:0; background:#fff; }
+    header .marca { color:var(--azul); font-weight:700; }
+    nav a { margin-left:16px; text-decoration:none; color:var(--azul); font-weight:700; font-size:14px; }
+    .hero { padding:56px 7%; background:var(--fondo); display:grid; grid-template-columns:1.15fr .85fr; gap:32px; align-items:center; }
+    h1 { color:var(--azul); font-size:34px; line-height:1.15; margin-bottom:12px; }
+    .hero p { max-width:460px; margin-bottom:22px; }
+    .btn { display:inline-block; background:var(--wsp); color:#fff; text-decoration:none; font-weight:700; padding:13px 20px; border-radius:8px; }
+    .btn2 { background:var(--azul); margin-left:8px; }
+    .logo-box { background:#fff; border:1px solid #e6eaee; border-radius:16px; padding:28px; text-align:center; color:#3E5A73; }
+    .logo-box strong { display:block; font-size:42px; letter-spacing:2px; }
+    .logo-box span { color:#9AA3AD; font-size:18px; }
+    section { padding:52px 7%; }
+    h2 { color:var(--azul); font-size:24px; margin-bottom:6px; }
+    .sub { color:#667; margin-bottom:22px; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .card { border:1px solid #e6eaee; border-radius:12px; padding:20px; background:#fff; }
+    .card h3 { color:var(--azul); margin-bottom:8px; }
+    .alt { background:var(--fondo); }
+    footer { background:var(--azul2); color:#d7dee6; padding:32px 7%; }
+    .float { position:fixed; right:16px; bottom:16px; background:var(--wsp); color:#fff; text-decoration:none; font-weight:700; padding:13px 18px; border-radius:40px; }
+    @media (max-width:800px) {
+      .hero, .grid { grid-template-columns:1fr; }
+      header { flex-direction:column; gap:10px; }
+      nav a { margin:0 8px; }
+      h1 { font-size:26px; }
+      .btn2 { margin:10px 0 0; display:inline-block; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="marca">Transportes Aldunate</div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#cobertura">Cobertura</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <div>
+      <h1>Transporte de tierra, arena y materiales</h1>
+      <p>Camion tolva. Trato directo. Escribes, cotizamos y coordinamos el viaje.</p>
+      <a class="btn" href="https://wa.me/56900000000?text=Hola%2C%20quiero%20cotizar%20un%20transporte%20con%20tolva" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      <a class="btn btn2" href="#servicios">Ver servicios</a>
+    </div>
+    <div class="logo-box">
+      <strong>TA</strong>
+      <span>TRANSPORTES</span>
+      <div style="font-size:22px;font-weight:700;margin-top:6px">ALDUNATE</div>
+    </div>
+  </section>
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <p class="sub">Un camion tolva para distintos materiales.</p>
+    <div class="grid">
+      <article class="card"><h3>Tierra</h3><p>Traslado o retiro de tierra para relleno, nivelacion o limpieza de terreno.</p></article>
+      <article class="card"><h3>Arena</h3><p>Transporte de arena y material similar, segun destino y disponibilidad.</p></article>
+      <article class="card"><h3>Otros materiales</h3><p>Escombros u otro material a granel. Se confirma por WhatsApp antes de salir.</p></article>
+    </div>
+  </section>
+  <section id="cobertura" class="alt">
+    <h2>Cobertura</h2>
+    <p class="sub">La ciudad y el horario se agregan cuando el cliente los confirme.</p>
+    <div class="grid">
+      <article class="card"><h3>Zona</h3><p>Se informa al cotizar. Si el destino esta lejos, se evalua en el momento.</p></article>
+      <article class="card"><h3>Como pedir</h3><p>Escribes: que material, de donde, a donde y para que dia.</p></article>
+      <article class="card"><h3>Empresa</h3><p>Transportes Aldunate Spa. Un camion y trato directo.</p></article>
+    </div>
+  </section>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p class="sub">El canal de la empresa es WhatsApp. El numero se cambia cuando el cliente lo entregue.</p>
+    <a class="btn" href="https://wa.me/56900000000?text=Hola%2C%20quiero%20cotizar%20un%20transporte%20con%20tolva" target="_blank" rel="noopener">Escribir ahora</a>
+  </section>
+  <footer>Transportes Aldunate Spa · Camion tolva</footer>
+  <a class="float" href="https://wa.me/56900000000?text=Hola%2C%20quiero%20cotizar%20un%20transporte%20con%20tolva" target="_blank" rel="noopener">WhatsApp</a>
+</body>
+</html>
