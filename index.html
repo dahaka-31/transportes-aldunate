@@ -52,79 +52,77 @@ footer{background:var(--azul2);color:#c5d3de;padding:20px 5%}
 </header>
 <section class="hero" style="padding:0">
   <div class="hero-text">
-    <h1>Camión tolva en Angol y ciudades aledañas</h1>
+    <h1>Cami&oacute;n tolva en Angol y ciudades aleda&ntilde;as</h1>
     <p>Tierra, arena, escombros y limpieza de terrenos. Escribes o llamas y cotizamos.</p>
     <div class="top-btns">
       <a class="btn-llamar" href="tel:+56965683342">Llamar 9 6568 3342</a>
       <a class="btn-wsp" href="https://wa.me/56965683342?text=Hola%2C%20quiero%20cotizar%20un%20transporte" target="_blank" rel="noopener">WhatsApp</a>
     </div>
   </div>
-  <div class="hero-foto"><img src="portada.jpg" alt="Camión trabajando"></div>
+  <div class="hero-foto"><img src="portada.jpg" alt="Camion trabajando"></div>
 </section>
 <section>
-  <h2>Qué hacemos</h2>
+  <h2>Qu&eacute; hacemos</h2>
   <div class="lista">
-    <article class="card"><h3>Tierra</h3><p>Relleno, retiro o nivelación.</p></article>
+    <article class="card"><h3>Tierra</h3><p>Relleno, retiro o nivelaci&oacute;n.</p></article>
     <article class="card"><h3>Arena</h3><p>Traslado para obra o terreno.</p></article>
     <article class="card"><h3>Escombros</h3><p>Retiro y transporte.</p></article>
-    <article class="card"><h3>Limpieza de terrenos</h3><p>Además del flete, limpiamos terrenos.</p></article>
+    <article class="card"><h3>Limpieza de terrenos</h3><p>Adem&aacute;s del flete, limpiamos terrenos.</p></article>
   </div>
 </section>
 <section>
-  <h2>Dónde y cuándo</h2>
+  <h2>D&oacute;nde y cu&aacute;ndo</h2>
   <div class="datos">
-    <article class="card"><h3>Zona</h3><p>Angol y ciudades aledañas.</p></article>
+    <article class="card"><h3>Zona</h3><p>Angol y ciudades aleda&ntilde;as.</p></article>
     <article class="card"><h3>Horario</h3><p>De 8:30 a 18:00.</p></article>
-    <article class="card"><h3>Camión</h3><p>Freightliner tolva, cabina blanca y tolva azul.</p></article>
-    <article class="card"><h3>Atención</h3><p>Trato directo. Dile material, origen, destino y día.</p></article>
+    <article class="card"><h3>Cami&oacute;n</h3><p>Freightliner tolva, cabina blanca y tolva azul.</p></article>
+    <article class="card"><h3>Atenci&oacute;n</h3><p>Trato directo. Dile material, origen, destino y d&iacute;a.</p></article>
   </div>
 </section>
 <section>
-  <h2>Así trabajamos</h2>
+  <h2>As&iacute; trabajamos</h2>
   <div class="carrusel">
-    <button class="flecha izq" type="button" onclick="mover(-1)">‹</button>
-    <div class="pista" id="pista"></div>
-    <button class="flecha der" type="button" onclick="mover(1)">›</button>
+    <button class="flecha izq" type="button" onclick="mover(-1)">&#8249;</button>
+    <div class="pista" id="pista">
+      <img src="foto-1.jpg" alt="Trabajo 1">
+      <img src="foto-2.jpg" alt="Trabajo 2">
+      <img src="foto-3.jpg" alt="Trabajo 3">
+      <img src="foto-4.jpg" alt="Trabajo 4">
+      <img src="foto-5.jpg" alt="Trabajo 5">
+      <img src="foto-6.jpg" alt="Trabajo 6">
+      <img src="foto-7.jpg" alt="Trabajo 7">
+      <img src="foto-8.jpg" alt="Trabajo 8">
+    </div>
+    <button class="flecha der" type="button" onclick="mover(1)">&#8250;</button>
   </div>
 </section>
 <section>
-  <h2>¿Quiénes somos?</h2>
+  <h2>&iquest;Qui&eacute;nes somos?</h2>
   <article class="card">
-    <p>Aquí va la historia de Transportes Aldunate Spa.</p>
-    <p class="aviso">Cuando el cliente envíe ese texto, se escribe aquí.</p>
+    <p>Aqu&iacute; va la historia de Transportes Aldunate Spa.</p>
+    <p class="aviso">Cuando el cliente env&iacute;e ese texto, se escribe aqu&iacute;.</p>
   </article>
 </section>
 <section>
   <h2>Contacto</h2>
-  <p style="margin-bottom:10px">Mismo número para llamar y para WhatsApp:</p>
+  <p style="margin-bottom:10px">Mismo n&uacute;mero para llamar y para WhatsApp:</p>
   <p style="font-size:22px;font-weight:700;color:var(--azul);margin-bottom:14px">9 6568 3342</p>
   <div class="top-btns">
     <a class="btn-llamar" href="tel:+56965683342" style="background:var(--azul);color:#fff">Llamar</a>
     <a class="btn-wsp" href="https://wa.me/56965683342?text=Hola%2C%20quiero%20cotizar%20un%20transporte" target="_blank" rel="noopener">WhatsApp</a>
   </div>
 </section>
-<footer>Transportes Aldunate Spa · Angol</footer>
+<footer>Transportes Aldunate Spa &middot; Angol</footer>
 <a class="float" href="https://wa.me/56965683342?text=Hola%2C%20quiero%20cotizar%20un%20transporte" target="_blank" rel="noopener">WhatsApp</a>
 <script>
-const posibles=["foto-1.jpg","foto-2.jpg","foto-3.jpg","foto-4.jpg","foto-5.jpg","foto-6.jpg","foto-7.jpg","foto-8.jpg","portada.jpg"];
-const fotos=[];
-let i=0;
-function pintar(){
-  const pista=document.getElementById("pista");
-  if(!fotos.length){pista.innerHTML="";return;}
-  const n=fotos.length;
-  const a=fotos[i%n], b=fotos[(i+1)%n], c=fotos[(i+2)%n];
-  pista.innerHTML='<img src="'+a+'" alt="Trabajo"><img src="'+b+'" alt="Trabajo"><img src="'+c+'" alt="Trabajo">';
+const pista=document.getElementById("pista");
+function mover(d){
+  const fotos=[].slice.call(pista.querySelectorAll("img"));
+  if(!fotos.length) return;
+  if(d>0) pista.appendChild(fotos[0]);
+  else pista.insertBefore(fotos[fotos.length-1], fotos[0]);
 }
-function mover(d){ if(!fotos.length) return; i=(i+d+fotos.length)%fotos.length; pintar(); }
-let p=posibles.length;
-posibles.forEach(src=>{
-  const img=new Image();
-  img.onload=()=>{ if(fotos.indexOf(src)===-1) fotos.push(src); p--; if(!p) pintar(); };
-  img.onerror=()=>{ p--; if(!p) pintar(); };
-  img.src=src;
-});
-setInterval(()=>mover(1),4000);
+setInterval(function(){ mover(1); }, 4000);
 </script>
 </body>
 </html>
